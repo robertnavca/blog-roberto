@@ -3,10 +3,10 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono|Encode+Sans+Semi+Condensed:100|Encode+Sans:300,600"
+google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono|Encode+Sans+Semi+Condensed:100|Encode+Sans:300,600|Anton"
 
 # Font families
 heading_font = "Encode Sans"
 body_font = "Roboto"
-nav_font = "Encode Sans Semi Condensed"
+nav_font = "Anton"
 mono_font = "Roboto Mono"
