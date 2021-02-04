@@ -6,7 +6,7 @@ name = "Minimal"
 google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Encode+Sans+Semi+Condensed:100|Encode+Sans:300,600|Oswald|Teko|Open+Sans:300"
 
 # Font families
-heading_font = "Oswald"
+heading_font = "Open Sans"
 body_font = "Roboto"
 nav_font = "Open Sans"
 mono_font = "Roboto Mono"
