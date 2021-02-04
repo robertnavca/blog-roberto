@@ -1,0 +1,18 @@
+# Theme metadata
+name = "Cream"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#f4836a"
+
+# Menu
+menu_primary = "#fff"
+menu_text = "#000000"
+menu_text_active = "#f4836a"
+menu_title = "#000000"
+
+# Home sections
+home_section_odd = "rgb(252, 190, 158)"
+home_section_even = "rgb(255, 255, 255)"
