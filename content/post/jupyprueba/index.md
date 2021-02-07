@@ -10,7 +10,6 @@ categories: ["Proyectos"]
 
 # Put any other Academic metadata here...
 ---
-
 # Predicción del precio de venta de la propiedad
 
 ## 1. Introducción
