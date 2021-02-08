@@ -1,5 +1,5 @@
 ---
-title: Display Jupyter Notebooks with Academic
+title: Prueba sobre jupyter interno
 subtitle: Learn how to blog in Academic using Jupyter notebooks
 summary: Learn how to blog in Academic using Jupyter notebooks
 authors:
@@ -34,7 +34,9 @@ Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-fl
 
 
 
-![png](./index_1_0.png)
+    
+![png](output_1_0.png)
+    
 
 
 
@@ -94,3 +96,50 @@ jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
 ## Example
 
 This post was created with Jupyter. The orginal files can be found at https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter
+
+
+```python
+import pandas as pd
+
+data = pd.DataFrame()
+```
+
+
+```python
+data.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+
+```
