@@ -59,8 +59,10 @@ Lo primero que haremos será cargar los datos en un _dataframe_ de _Pandas_. Sab
 
 ```python
 data = pd.read_csv('data/train.csv', index_col='Id')
-display(data.head())
+data.head()
 ```
+
+
 
 
 <div>
@@ -84,41 +86,13 @@ display(data.head())
       <th>MSSubClass</th>
       <th>MSZoning</th>
       <th>LotFrontage</th>
-      <th>LotArea</th>
-      <th>Street</th>
-      <th>Alley</th>
-      <th>LotShape</th>
-      <th>LandContour</th>
-      <th>Utilities</th>
-      <th>LotConfig</th>
       <th>...</th>
-      <th>PoolArea</th>
-      <th>PoolQC</th>
-      <th>Fence</th>
-      <th>MiscFeature</th>
-      <th>MiscVal</th>
-      <th>MoSold</th>
-      <th>YrSold</th>
       <th>SaleType</th>
       <th>SaleCondition</th>
       <th>SalePrice</th>
     </tr>
     <tr>
       <th>Id</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -134,21 +108,7 @@ display(data.head())
       <td>60</td>
       <td>RL</td>
       <td>65.0</td>
-      <td>8450</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
       <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2008</td>
       <td>WD</td>
       <td>Normal</td>
       <td>208500</td>
@@ -158,21 +118,7 @@ display(data.head())
       <td>20</td>
       <td>RL</td>
       <td>80.0</td>
-      <td>9600</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
       <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>5</td>
-      <td>2007</td>
       <td>WD</td>
       <td>Normal</td>
       <td>181500</td>
@@ -182,21 +128,7 @@ display(data.head())
       <td>60</td>
       <td>RL</td>
       <td>68.0</td>
-      <td>11250</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
       <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>9</td>
-      <td>2008</td>
       <td>WD</td>
       <td>Normal</td>
       <td>223500</td>
@@ -206,21 +138,7 @@ display(data.head())
       <td>70</td>
       <td>RL</td>
       <td>60.0</td>
-      <td>9550</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Corner</td>
       <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2006</td>
       <td>WD</td>
       <td>Abnorml</td>
       <td>140000</td>
@@ -230,21 +148,7 @@ display(data.head())
       <td>60</td>
       <td>RL</td>
       <td>84.0</td>
-      <td>14260</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
       <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>12</td>
-      <td>2008</td>
       <td>WD</td>
       <td>Normal</td>
       <td>250000</td>
@@ -253,6 +157,7 @@ display(data.head())
 </table>
 <p>5 rows × 80 columns</p>
 </div>
+
 
 
 
@@ -284,11 +189,7 @@ data.describe(include='all').T
       <th>count</th>
       <th>unique</th>
       <th>top</th>
-      <th>freq</th>
-      <th>mean</th>
-      <th>std</th>
-      <th>min</th>
-      <th>25%</th>
+      <th>...</th>
       <th>50%</th>
       <th>75%</th>
       <th>max</th>
@@ -300,11 +201,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>56.8973</td>
-      <td>42.3006</td>
-      <td>20</td>
-      <td>20</td>
+      <td>...</td>
       <td>50</td>
       <td>70</td>
       <td>190</td>
@@ -314,11 +211,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>5</td>
       <td>RL</td>
-      <td>1151</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -328,11 +221,7 @@ data.describe(include='all').T
       <td>1201</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>70.05</td>
-      <td>24.2848</td>
-      <td>21</td>
-      <td>59</td>
+      <td>...</td>
       <td>69</td>
       <td>80</td>
       <td>313</td>
@@ -342,11 +231,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>10516.8</td>
-      <td>9981.26</td>
-      <td>1300</td>
-      <td>7553.5</td>
+      <td>...</td>
       <td>9478.5</td>
       <td>11601.5</td>
       <td>215245</td>
@@ -356,11 +241,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>2</td>
       <td>Pave</td>
-      <td>1454</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -374,21 +255,13 @@ data.describe(include='all').T
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>MoSold</th>
       <td>1460</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>6.32192</td>
-      <td>2.70363</td>
-      <td>1</td>
-      <td>5</td>
+      <td>...</td>
       <td>6</td>
       <td>8</td>
       <td>12</td>
@@ -398,11 +271,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>2007.82</td>
-      <td>1.3281</td>
-      <td>2006</td>
-      <td>2007</td>
+      <td>...</td>
       <td>2008</td>
       <td>2009</td>
       <td>2010</td>
@@ -412,11 +281,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>9</td>
       <td>WD</td>
-      <td>1267</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -426,11 +291,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>6</td>
       <td>Normal</td>
-      <td>1198</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -440,11 +301,7 @@ data.describe(include='all').T
       <td>1460</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>180921</td>
-      <td>79442.5</td>
-      <td>34900</td>
-      <td>129975</td>
+      <td>...</td>
       <td>163000</td>
       <td>214000</td>
       <td>755000</td>
@@ -455,6 +312,11 @@ data.describe(include='all').T
 </div>
 
 
+
+
+```python
+pd.set_option("max_columns", 7)
+```
 
 
 ```python
