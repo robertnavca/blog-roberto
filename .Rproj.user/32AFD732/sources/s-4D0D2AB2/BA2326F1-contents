@@ -1,1 +1,1 @@
-blogdown::new_post("Estoe es una prueba")
+render(input = "/Users/robertonavarretecansino/Proyectos/Python/Proyectos/Kaggle HOUSE PRICES/index.Rmd", md_document(variant = "markdown_github"), )

@@ -1,0 +1,27 @@
+{
+    "id": "484EF095",
+    "path": "~/Documents/GitHub/blog-roberto/content/post/Otra prueba/index.Rmd",
+    "project_path": "content/post/Otra prueba/index.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1612856661716.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "25,0",
+        "scrollLine": "16"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1612855916,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1612855916,
+    "read_only": false,
+    "read_only_alternatives": []
+}

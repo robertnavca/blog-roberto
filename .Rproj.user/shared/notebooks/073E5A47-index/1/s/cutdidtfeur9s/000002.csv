@@ -1,0 +1,25 @@
+"0","```python
+reticulate::repl_python()
+```"
+"1","Python 3.6.10 (/Users/robertonavarretecansino/Library/r-miniconda/envs/r-reticulate/bin/python)
+Reticulate 1.18 REPL -- A Python interpreter in R.
+"
+"0","```python
+import pandas as pd
+data = pd.read_csv(\"data/train.csv\", index_col='Id')
+```"
+"1","FileNotFoundError: [Errno 2] No such file or directory: 'data/train.csv'
+"
+"0","```python
+data.head()
+```"
+"1","    MSSubClass MSZoning  LotFrontage  ...  SaleType SaleCondition SalePrice
+Id                                    ...                                  
+1           60       RL         65.0  ...        WD        Normal    208500
+2           20       RL         80.0  ...        WD        Normal    181500
+3           60       RL         68.0  ...        WD        Normal    223500
+4           70       RL         60.0  ...        WD       Abnorml    140000
+5           60       RL         84.0  ...        WD        Normal    250000
+
+[5 rows x 80 columns]
+"

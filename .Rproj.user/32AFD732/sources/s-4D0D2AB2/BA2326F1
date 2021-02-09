@@ -1,7 +1,7 @@
 {
     "id": "BA2326F1",
-    "path": null,
-    "project_path": null,
+    "path": "~/Documents/GitHub/blog-roberto/content/post/Otra prueba/Untitled.R",
+    "project_path": "content/post/Otra prueba/Untitled.R",
     "type": "r_source",
     "hash": "0",
     "contents": "",
@@ -17,11 +17,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 140260811039440,
-    "encoding": "",
+    "lastKnownWriteTime": 1612858604,
+    "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1612856340072,
+    "last_content_update": 1612859425123,
     "read_only": false,
     "read_only_alternatives": []
 }
