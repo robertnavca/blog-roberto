@@ -57,7 +57,7 @@ Lo primero que haremos será cargar los datos en un _dataframe_ de _Pandas_. Sab
 
 ```python
 data = pd.read_csv('data/train.csv', index_col='Id')
-data.head().style
+data.head()
 ```
 
 
