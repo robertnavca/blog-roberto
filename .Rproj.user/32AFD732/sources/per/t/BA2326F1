@@ -3,9 +3,9 @@
     "path": "~/Documents/GitHub/blog-roberto/content/post/Otra prueba/Untitled.R",
     "project_path": "content/post/Otra prueba/Untitled.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "273212021",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1612856266938.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1612858604,
+    "lastKnownWriteTime": 1612863479,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1612859425123,
+    "last_content_update": 1612863479058,
     "read_only": false,
     "read_only_alternatives": []
 }
