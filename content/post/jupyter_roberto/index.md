@@ -105,235 +105,38 @@ dt_data = dt.fread('data/train.csv')
 
 
 ```python
-dt_data.head()
+print(dt_data.head().to_pandas().to_markdown())
 ```
 
-
-
-
-<div class='datatable'>
-  <table class='frame'>
-  <thead>
-    <tr class='colnames'><td class='row_index'></td><th>Id</th><th>MSSubClass</th><th>MSZoning</th><th>LotFrontage</th><th>LotArea</th><th>Street</th><th>Alley</th><th>LotShape</th><th>LandContour</th><th>Utilities</th><th class='vellipsis'>&hellip;</th><th>MoSold</th><th>YrSold</th><th>SaleType</th><th>SaleCondition</th><th>SalePrice</th></tr>
-    <tr class='coltypes'><td class='row_index'></td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td></td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='str' title='str32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td><td class='int' title='int32'>&#x25AA;&#x25AA;&#x25AA;&#x25AA;</td></tr>
-  </thead>
-  <tbody>
-    <tr><td class='row_index'>0</td><td>1</td><td>60</td><td>RL</td><td>65</td><td>8450</td><td>Pave</td><td><span class=na>NA</span></td><td>Reg</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>2</td><td>2008</td><td>WD</td><td>Normal</td><td>208500</td></tr>
-    <tr><td class='row_index'>1</td><td>2</td><td>20</td><td>RL</td><td>80</td><td>9600</td><td>Pave</td><td><span class=na>NA</span></td><td>Reg</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>5</td><td>2007</td><td>WD</td><td>Normal</td><td>181500</td></tr>
-    <tr><td class='row_index'>2</td><td>3</td><td>60</td><td>RL</td><td>68</td><td>11250</td><td>Pave</td><td><span class=na>NA</span></td><td>IR1</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>9</td><td>2008</td><td>WD</td><td>Normal</td><td>223500</td></tr>
-    <tr><td class='row_index'>3</td><td>4</td><td>70</td><td>RL</td><td>60</td><td>9550</td><td>Pave</td><td><span class=na>NA</span></td><td>IR1</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>2</td><td>2006</td><td>WD</td><td>Abnorml</td><td>140000</td></tr>
-    <tr><td class='row_index'>4</td><td>5</td><td>60</td><td>RL</td><td>84</td><td>14260</td><td>Pave</td><td><span class=na>NA</span></td><td>IR1</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>12</td><td>2008</td><td>WD</td><td>Normal</td><td>250000</td></tr>
-    <tr><td class='row_index'>5</td><td>6</td><td>50</td><td>RL</td><td>85</td><td>14115</td><td>Pave</td><td><span class=na>NA</span></td><td>IR1</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>10</td><td>2009</td><td>WD</td><td>Normal</td><td>143000</td></tr>
-    <tr><td class='row_index'>6</td><td>7</td><td>20</td><td>RL</td><td>75</td><td>10084</td><td>Pave</td><td><span class=na>NA</span></td><td>Reg</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>8</td><td>2007</td><td>WD</td><td>Normal</td><td>307000</td></tr>
-    <tr><td class='row_index'>7</td><td>8</td><td>60</td><td>RL</td><td><span class=na>NA</span></td><td>10382</td><td>Pave</td><td><span class=na>NA</span></td><td>IR1</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>11</td><td>2009</td><td>WD</td><td>Normal</td><td>200000</td></tr>
-    <tr><td class='row_index'>8</td><td>9</td><td>50</td><td>RM</td><td>51</td><td>6120</td><td>Pave</td><td><span class=na>NA</span></td><td>Reg</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>4</td><td>2008</td><td>WD</td><td>Abnorml</td><td>129900</td></tr>
-    <tr><td class='row_index'>9</td><td>10</td><td>190</td><td>RL</td><td>50</td><td>7420</td><td>Pave</td><td><span class=na>NA</span></td><td>Reg</td><td>Lvl</td><td>AllPub</td><td class=vellipsis>&hellip;</td><td>1</td><td>2008</td><td>WD</td><td>Normal</td><td>118000</td></tr>
-  </tbody>
-  </table>
-  <div class='footer'>
-    <div class='frame_dimensions'>10 rows &times; 81 columns</div>
-  </div>
-</div>
-
-
+    |    |   Id |   MSSubClass | MSZoning   |   LotFrontage |   LotArea | Street   |   Alley | LotShape   | LandContour   | Utilities   | LotConfig   | LandSlope   | Neighborhood   | Condition1   | Condition2   | BldgType   | HouseStyle   |   OverallQual |   OverallCond |   YearBuilt |   YearRemodAdd | RoofStyle   | RoofMatl   | Exterior1st   | Exterior2nd   | MasVnrType   |   MasVnrArea | ExterQual   | ExterCond   | Foundation   | BsmtQual   | BsmtCond   | BsmtExposure   | BsmtFinType1   |   BsmtFinSF1 | BsmtFinType2   |   BsmtFinSF2 |   BsmtUnfSF |   TotalBsmtSF | Heating   | HeatingQC   | CentralAir   | Electrical   |   1stFlrSF |   2ndFlrSF |   LowQualFinSF |   GrLivArea |   BsmtFullBath |   BsmtHalfBath |   FullBath |   HalfBath |   BedroomAbvGr |   KitchenAbvGr | KitchenQual   |   TotRmsAbvGrd | Functional   |   Fireplaces | FireplaceQu   | GarageType   |   GarageYrBlt | GarageFinish   |   GarageCars |   GarageArea | GarageQual   | GarageCond   | PavedDrive   |   WoodDeckSF |   OpenPorchSF |   EnclosedPorch |   3SsnPorch |   ScreenPorch |   PoolArea |   PoolQC | Fence   | MiscFeature   |   MiscVal |   MoSold |   YrSold | SaleType   | SaleCondition   |   SalePrice |
+    |---:|-----:|-------------:|:-----------|--------------:|----------:|:---------|--------:|:-----------|:--------------|:------------|:------------|:------------|:---------------|:-------------|:-------------|:-----------|:-------------|--------------:|--------------:|------------:|---------------:|:------------|:-----------|:--------------|:--------------|:-------------|-------------:|:------------|:------------|:-------------|:-----------|:-----------|:---------------|:---------------|-------------:|:---------------|-------------:|------------:|--------------:|:----------|:------------|:-------------|:-------------|-----------:|-----------:|---------------:|------------:|---------------:|---------------:|-----------:|-----------:|---------------:|---------------:|:--------------|---------------:|:-------------|-------------:|:--------------|:-------------|--------------:|:---------------|-------------:|-------------:|:-------------|:-------------|:-------------|-------------:|--------------:|----------------:|------------:|--------------:|-----------:|---------:|:--------|:--------------|----------:|---------:|---------:|:-----------|:----------------|------------:|
+    |  0 |    1 |           60 | RL         |            65 |      8450 | Pave     |     nan | Reg        | Lvl           | AllPub      | Inside      | Gtl         | CollgCr        | Norm         | Norm         | 1Fam       | 2Story       |             7 |             5 |        2003 |           2003 | Gable       | CompShg    | VinylSd       | VinylSd       | BrkFace      |          196 | Gd          | TA          | PConc        | Gd         | TA         | No             | GLQ            |          706 | Unf            |            0 |         150 |           856 | GasA      | Ex          | Y            | SBrkr        |        856 |        854 |              0 |        1710 |              1 |              0 |          2 |          1 |              3 |              1 | Gd            |              8 | Typ          |            0 | nan           | Attchd       |          2003 | RFn            |            2 |          548 | TA           | TA           | Y            |            0 |            61 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        2 |     2008 | WD         | Normal          |      208500 |
+    |  1 |    2 |           20 | RL         |            80 |      9600 | Pave     |     nan | Reg        | Lvl           | AllPub      | FR2         | Gtl         | Veenker        | Feedr        | Norm         | 1Fam       | 1Story       |             6 |             8 |        1976 |           1976 | Gable       | CompShg    | MetalSd       | MetalSd       | None         |            0 | TA          | TA          | CBlock       | Gd         | TA         | Gd             | ALQ            |          978 | Unf            |            0 |         284 |          1262 | GasA      | Ex          | Y            | SBrkr        |       1262 |          0 |              0 |        1262 |              0 |              1 |          2 |          0 |              3 |              1 | TA            |              6 | Typ          |            1 | TA            | Attchd       |          1976 | RFn            |            2 |          460 | TA           | TA           | Y            |          298 |             0 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        5 |     2007 | WD         | Normal          |      181500 |
+    |  2 |    3 |           60 | RL         |            68 |     11250 | Pave     |     nan | IR1        | Lvl           | AllPub      | Inside      | Gtl         | CollgCr        | Norm         | Norm         | 1Fam       | 2Story       |             7 |             5 |        2001 |           2002 | Gable       | CompShg    | VinylSd       | VinylSd       | BrkFace      |          162 | Gd          | TA          | PConc        | Gd         | TA         | Mn             | GLQ            |          486 | Unf            |            0 |         434 |           920 | GasA      | Ex          | Y            | SBrkr        |        920 |        866 |              0 |        1786 |              1 |              0 |          2 |          1 |              3 |              1 | Gd            |              6 | Typ          |            1 | TA            | Attchd       |          2001 | RFn            |            2 |          608 | TA           | TA           | Y            |            0 |            42 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        9 |     2008 | WD         | Normal          |      223500 |
+    |  3 |    4 |           70 | RL         |            60 |      9550 | Pave     |     nan | IR1        | Lvl           | AllPub      | Corner      | Gtl         | Crawfor        | Norm         | Norm         | 1Fam       | 2Story       |             7 |             5 |        1915 |           1970 | Gable       | CompShg    | Wd Sdng       | Wd Shng       | None         |            0 | TA          | TA          | BrkTil       | TA         | Gd         | No             | ALQ            |          216 | Unf            |            0 |         540 |           756 | GasA      | Gd          | Y            | SBrkr        |        961 |        756 |              0 |        1717 |              1 |              0 |          1 |          0 |              3 |              1 | Gd            |              7 | Typ          |            1 | Gd            | Detchd       |          1998 | Unf            |            3 |          642 | TA           | TA           | Y            |            0 |            35 |             272 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        2 |     2006 | WD         | Abnorml         |      140000 |
+    |  4 |    5 |           60 | RL         |            84 |     14260 | Pave     |     nan | IR1        | Lvl           | AllPub      | FR2         | Gtl         | NoRidge        | Norm         | Norm         | 1Fam       | 2Story       |             8 |             5 |        2000 |           2000 | Gable       | CompShg    | VinylSd       | VinylSd       | BrkFace      |          350 | Gd          | TA          | PConc        | Gd         | TA         | Av             | GLQ            |          655 | Unf            |            0 |         490 |          1145 | GasA      | Ex          | Y            | SBrkr        |       1145 |       1053 |              0 |        2198 |              1 |              0 |          2 |          1 |              4 |              1 | Gd            |              9 | Typ          |            1 | TA            | Attchd       |          2000 | RFn            |            3 |          836 | TA           | TA           | Y            |          192 |            84 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |       12 |     2008 | WD         | Normal          |      250000 |
+    |  5 |    6 |           50 | RL         |            85 |     14115 | Pave     |     nan | IR1        | Lvl           | AllPub      | Inside      | Gtl         | Mitchel        | Norm         | Norm         | 1Fam       | 1.5Fin       |             5 |             5 |        1993 |           1995 | Gable       | CompShg    | VinylSd       | VinylSd       | None         |            0 | TA          | TA          | Wood         | Gd         | TA         | No             | GLQ            |          732 | Unf            |            0 |          64 |           796 | GasA      | Ex          | Y            | SBrkr        |        796 |        566 |              0 |        1362 |              1 |              0 |          1 |          1 |              1 |              1 | TA            |              5 | Typ          |            0 | nan           | Attchd       |          1993 | Unf            |            2 |          480 | TA           | TA           | Y            |           40 |            30 |               0 |         320 |             0 |          0 |      nan | MnPrv   | Shed          |       700 |       10 |     2009 | WD         | Normal          |      143000 |
+    |  6 |    7 |           20 | RL         |            75 |     10084 | Pave     |     nan | Reg        | Lvl           | AllPub      | Inside      | Gtl         | Somerst        | Norm         | Norm         | 1Fam       | 1Story       |             8 |             5 |        2004 |           2005 | Gable       | CompShg    | VinylSd       | VinylSd       | Stone        |          186 | Gd          | TA          | PConc        | Ex         | TA         | Av             | GLQ            |         1369 | Unf            |            0 |         317 |          1686 | GasA      | Ex          | Y            | SBrkr        |       1694 |          0 |              0 |        1694 |              1 |              0 |          2 |          0 |              3 |              1 | Gd            |              7 | Typ          |            1 | Gd            | Attchd       |          2004 | RFn            |            2 |          636 | TA           | TA           | Y            |          255 |            57 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        8 |     2007 | WD         | Normal          |      307000 |
+    |  7 |    8 |           60 | RL         |           nan |     10382 | Pave     |     nan | IR1        | Lvl           | AllPub      | Corner      | Gtl         | NWAmes         | PosN         | Norm         | 1Fam       | 2Story       |             7 |             6 |        1973 |           1973 | Gable       | CompShg    | HdBoard       | HdBoard       | Stone        |          240 | TA          | TA          | CBlock       | Gd         | TA         | Mn             | ALQ            |          859 | BLQ            |           32 |         216 |          1107 | GasA      | Ex          | Y            | SBrkr        |       1107 |        983 |              0 |        2090 |              1 |              0 |          2 |          1 |              3 |              1 | TA            |              7 | Typ          |            2 | TA            | Attchd       |          1973 | RFn            |            2 |          484 | TA           | TA           | Y            |          235 |           204 |             228 |           0 |             0 |          0 |      nan | nan     | Shed          |       350 |       11 |     2009 | WD         | Normal          |      200000 |
+    |  8 |    9 |           50 | RM         |            51 |      6120 | Pave     |     nan | Reg        | Lvl           | AllPub      | Inside      | Gtl         | OldTown        | Artery       | Norm         | 1Fam       | 1.5Fin       |             7 |             5 |        1931 |           1950 | Gable       | CompShg    | BrkFace       | Wd Shng       | None         |            0 | TA          | TA          | BrkTil       | TA         | TA         | No             | Unf            |            0 | Unf            |            0 |         952 |           952 | GasA      | Gd          | Y            | FuseF        |       1022 |        752 |              0 |        1774 |              0 |              0 |          2 |          0 |              2 |              2 | TA            |              8 | Min1         |            2 | TA            | Detchd       |          1931 | Unf            |            2 |          468 | Fa           | TA           | Y            |           90 |             0 |             205 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        4 |     2008 | WD         | Abnorml         |      129900 |
+    |  9 |   10 |          190 | RL         |            50 |      7420 | Pave     |     nan | Reg        | Lvl           | AllPub      | Corner      | Gtl         | BrkSide        | Artery       | Artery       | 2fmCon     | 1.5Unf       |             5 |             6 |        1939 |           1950 | Gable       | CompShg    | MetalSd       | MetalSd       | None         |            0 | TA          | TA          | BrkTil       | TA         | TA         | No             | GLQ            |          851 | Unf            |            0 |         140 |           991 | GasA      | Ex          | Y            | SBrkr        |       1077 |          0 |              0 |        1077 |              1 |              0 |          1 |          0 |              2 |              2 | TA            |              5 | Typ          |            2 | TA            | Attchd       |          1939 | RFn            |            1 |          205 | Gd           | TA           | Y            |            0 |             4 |               0 |           0 |             0 |          0 |      nan | nan     | nan           |         0 |        1 |     2008 | WD         | Normal          |      118000 |
 
 
 
 ```python
-display(data.head())
+display(data.head(20))
 ```
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+    ---------------------------------------------------------------------------
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+    NameError                                 Traceback (most recent call last)
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MSSubClass</th>
-      <th>MSZoning</th>
-      <th>LotFrontage</th>
-      <th>LotArea</th>
-      <th>Street</th>
-      <th>Alley</th>
-      <th>LotShape</th>
-      <th>LandContour</th>
-      <th>Utilities</th>
-      <th>LotConfig</th>
-      <th>...</th>
-      <th>PoolArea</th>
-      <th>PoolQC</th>
-      <th>Fence</th>
-      <th>MiscFeature</th>
-      <th>MiscVal</th>
-      <th>MoSold</th>
-      <th>YrSold</th>
-      <th>SaleType</th>
-      <th>SaleCondition</th>
-      <th>SalePrice</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>65.0</td>
-      <td>8450</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>208500</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>20</td>
-      <td>RL</td>
-      <td>80.0</td>
-      <td>9600</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>5</td>
-      <td>2007</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>181500</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>68.0</td>
-      <td>11250</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>9</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>223500</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>70</td>
-      <td>RL</td>
-      <td>60.0</td>
-      <td>9550</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Corner</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2006</td>
-      <td>WD</td>
-      <td>Abnorml</td>
-      <td>140000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>84.0</td>
-      <td>14260</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>12</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>250000</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 80 columns</p>
-</div>
+    <ipython-input-7-06297f7c2402> in <module>
+    ----> 1 display(data.head(20))
+    
+
+    NameError: name 'data' is not defined
 
 
 
