@@ -38,7 +38,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
-  #authors = "/author/:slug/"
+  authors = "/author/:slug/"
   tags = "/tag/:slug/"
   categories = "/category/:slug/"
   publication_types = "/publication-type/:slug/"
@@ -76,7 +76,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   tag = "tags"
   category = "categories"
   publication_type = "publication_types"
-  author = "authors"
+  #author = "authors"
 
 # Related content.
 [related]
