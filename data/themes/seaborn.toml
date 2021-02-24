@@ -5,7 +5,7 @@ name = "Seaborn"
 light = true
 
 # Primary
-primary = "#6b83b6"
+primary = "#0b6366"
 
 # Menu
 menu_primary = "#0f7677"
