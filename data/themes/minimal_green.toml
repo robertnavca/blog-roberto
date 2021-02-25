@@ -6,12 +6,12 @@ name = "minimal_green"
 light = true
 
 # Primary
-primary = "#73B1A9"
+primary = "#4E6457"
 
 # Menu
 menu_primary = "#ffffff"
 menu_text = "#333333"
-menu_text_active = "#73B1A9"
+menu_text_active = "#4E6457"
 menu_title = "#ffffff"
 
 # Home sections
