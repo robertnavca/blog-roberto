@@ -5,15 +5,15 @@ name = "Seaborn"
 light = true
 
 # Primary
-primary = "#73B1A9"
+primary = "#D5B026"
 
 # Menu
 menu_primary = "#ffffff"
 menu_text = "#333333"
-menu_text_active = "#73B1A9"
+menu_text_active = "#D5B026"
 menu_title = "#ffffff"
 
 # Home sections
-background = "#F1F1EF" # Fondo de las páginas
-home_section_odd = "rgb(241, 241, 239)"
+background = "#EAEAEA" # Fondo de las páginas
+home_section_odd = "rgb(234, 234, 234)"
 home_section_even = "rgb(255, 255, 255)"
