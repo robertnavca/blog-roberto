@@ -3,10 +3,10 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Shippori+Mincho:wght@400;700:400;700|Encode+Sans:300,600|Abril+Fatface|Open+Sans:300|Noto+Sans+JP:wght@300;500"
+google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Shippori+Mincho:400;700;800|Encode+Sans:300,600|Abril+Fatface|Open+Sans:300|Noto+Sans+JP:wght@300;500"
 
 # Font families
 heading_font = "Shippori Mincho"
 body_font = "Roboto"
-nav_font = "Abril Fatface"
+nav_font = "Shippori Mincho"
 mono_font = "Roboto Mono"
