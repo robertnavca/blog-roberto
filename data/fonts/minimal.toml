@@ -3,10 +3,10 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Shippori+Mincho:400;700;800|Oswald:300;600|Abril+Fatface|Open+Sans:300|Noto+Sans+JP:wght@300;500"
+google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Spartan:200,500|Oswald:300,600|Abril+Fatface|Open+Sans:300|Noto+Sans+JP:wght@300;500"
 
 # Font families
-heading_font = "Oswald"
+heading_font = "Spartan"
 body_font = "Roboto"
-nav_font = "Oswald"
+nav_font = "Spartan"
 mono_font = "Roboto Mono"
