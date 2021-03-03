@@ -1,0 +1,19 @@
+# Theme metadata
+name = "minimal_grey"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#383838"
+
+# Menu
+menu_primary = "#EAEBE5"
+menu_text = "#383838"
+menu_text_active = "#383838"
+menu_title = "#383838"
+
+# Home sections
+background = "#EAEBE5" # Fondo de las páginas
+home_section_odd = "rgb(234, 235, 229)"
+home_section_even = "rgb(234, 235, 229)"
