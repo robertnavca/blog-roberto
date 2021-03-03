@@ -1,6 +1,0 @@
-"0","reticulate::repl_python()
-"
-"2","Python 3.6.10 (/Users/robertonavarretecansino/Library/r-miniconda/envs/r-reticulate/bin/python)
-Reticulate 1.18 REPL -- A Python interpreter in R.
-"
-"0","import seaborn as sns"
