@@ -80,7 +80,8 @@ data.head(1)
     }
     
     td {
-      width: auto;
+      width:1px;
+      white-space:nowrap;
     }
 
 </style>
