@@ -76,3 +76,99 @@ data.head(1).to_html()
     style="border:none;">
  </iframe>
 
+```HTML
+<div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+    
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+    
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>MSSubClass</th>
+          <th>MSZoning</th>
+          <th>LotFrontage</th>
+          <th>LotArea</th>
+          <th>Street</th>
+          <th>Alley</th>
+          <th>LotShape</th>
+          <th>LandContour</th>
+          <th>Utilities</th>
+          <th>LotConfig</th>
+          <th>...</th>
+          <th>PoolArea</th>
+          <th>PoolQC</th>
+          <th>Fence</th>
+          <th>MiscFeature</th>
+          <th>MiscVal</th>
+          <th>MoSold</th>
+          <th>YrSold</th>
+          <th>SaleType</th>
+          <th>SaleCondition</th>
+          <th>SalePrice</th>
+        </tr>
+        <tr>
+          <th>Id</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>60</td>
+          <td>RL</td>
+          <td>65.0</td>
+          <td>8450</td>
+          <td>Pave</td>
+          <td>NaN</td>
+          <td>Reg</td>
+          <td>Lvl</td>
+          <td>AllPub</td>
+          <td>Inside</td>
+          <td>...</td>
+          <td>0</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>0</td>
+          <td>2</td>
+          <td>2008</td>
+          <td>WD</td>
+          <td>Normal</td>
+          <td>208500</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>1 rows × 80 columns</p>
+    </div>
+``
