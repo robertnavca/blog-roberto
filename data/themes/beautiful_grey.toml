@@ -1,0 +1,19 @@
+# Theme metadata
+name = "beautiful_grey"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#404040"
+
+# Menu
+menu_primary = "#F5F5F5"
+menu_text = "#404040"
+menu_text_active = "#404040"
+menu_title = "#404040"
+
+# Home sections
+background = "#FFFFFF" # Fondo de las páginas
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(255, 255, 255)"

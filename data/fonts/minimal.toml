@@ -3,10 +3,10 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Sumana:wght@400;700|Oswald:300,600|Unica+One|Open+Sans:300|Noto+Sans+JP:wght@300;500"
+google_fonts = "Montserrat:400,700|Roboto:100,400,400italic,700|Roboto+Mono|Raleway:600,900|Oswald:300,600|Exo+2:800,900|Open+Sans:300"
 
 # Font families
-heading_font = "Sumana"
+heading_font = "Exo 2"
 body_font = "Roboto"
-nav_font = "Sumana"
+nav_font = "Exo 2"
 mono_font = "Roboto Mono"
