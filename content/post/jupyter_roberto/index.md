@@ -81,7 +81,8 @@ data.head(1)
     
     td {
       min-width: 200px;
-}
+    }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -110,7 +111,7 @@ data.head(1)
       <th>SalePrice</th>
     </tr>
     <tr>
-      <th>Id</th>
+      <th style="min-width:50px">Id</th>
       <th></th>
       <th></th>
       <th></th>
