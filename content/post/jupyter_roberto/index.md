@@ -75,7 +75,7 @@ table, th, td {
 </style>
 </head>
 <body>
-<table style="width:100% class="dataframe">
+<table style="width:100%" class="dataframe">
     <thead>
         <tr style="text-align: right;">
             <th></th>
