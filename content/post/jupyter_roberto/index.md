@@ -80,7 +80,7 @@ data.head(1)
     }
     
     td {
-      min-width: 200px;
+      min-width: 100px;
     }
 
 </style>
@@ -88,7 +88,7 @@ data.head(1)
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th style="min-width:200px">MSSubClass</th>
+      <th style="min-width:100px">MSSubClass</th>
       <th>MSZoning</th>
       <th>LotFrontage</th>
       <th>LotArea</th>
@@ -111,7 +111,7 @@ data.head(1)
       <th>SalePrice</th>
     </tr>
     <tr>
-      <th style="min-width:50px">Id</th>
+      <th style="min-width:30px">Id</th>
       <th></th>
       <th></th>
       <th></th>
