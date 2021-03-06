@@ -78,6 +78,10 @@ data.head(1)
     .dataframe thead th {
         text-align: right;
     }
+    
+    td {
+      min-width: 200px;
+}
 </style>
 <table border="1" class="dataframe">
   <thead>
