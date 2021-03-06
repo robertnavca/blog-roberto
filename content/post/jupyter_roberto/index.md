@@ -77,7 +77,7 @@ table, th, td {
 <body>
 <table style="width:100%" class="dataframe">
     <thead>
-        <tr style="text-align: right;">
+        <tr style="text-align: right;" style="width:70%">
             <th></th>
             <th>MSSubClass</th>
             <th>MSZoning</th>
