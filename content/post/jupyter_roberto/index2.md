@@ -59,7 +59,7 @@ Lo primero que haremos será cargar los datos en un _dataframe_ de _Pandas_. Sab
 
 ```python
 data = pd.read_csv('data/train.csv', index_col='Id')
-data.head(10)
+data.head(1)
 ```
 
 
@@ -78,16 +78,18 @@ data.head(10)
     .dataframe thead th {
         text-align: right;
     }
+    
     th, td {
       width:1px;
       white-space:nowrap;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>MSSubClass</th>
+      <th style="min-width:100px">MSSubClass</th>
       <th>MSZoning</th>
       <th>LotFrontage</th>
       <th>LotArea</th>
@@ -110,7 +112,7 @@ data.head(10)
       <th>SalePrice</th>
     </tr>
     <tr>
-      <th>Id</th>
+      <th style="min-width:30px">Id</th>
       <th></th>
       <th></th>
       <th></th>
@@ -159,225 +161,9 @@ data.head(10)
       <td>Normal</td>
       <td>208500</td>
     </tr>
-    <tr>
-      <th>2</th>
-      <td>20</td>
-      <td>RL</td>
-      <td>80.0</td>
-      <td>9600</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>5</td>
-      <td>2007</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>181500</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>68.0</td>
-      <td>11250</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>9</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>223500</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>70</td>
-      <td>RL</td>
-      <td>60.0</td>
-      <td>9550</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Corner</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2006</td>
-      <td>WD</td>
-      <td>Abnorml</td>
-      <td>140000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>84.0</td>
-      <td>14260</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>FR2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>12</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>250000</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>50</td>
-      <td>RL</td>
-      <td>85.0</td>
-      <td>14115</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>MnPrv</td>
-      <td>Shed</td>
-      <td>700</td>
-      <td>10</td>
-      <td>2009</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>143000</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>20</td>
-      <td>RL</td>
-      <td>75.0</td>
-      <td>10084</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>8</td>
-      <td>2007</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>307000</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>60</td>
-      <td>RL</td>
-      <td>NaN</td>
-      <td>10382</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Corner</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Shed</td>
-      <td>350</td>
-      <td>11</td>
-      <td>2009</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>200000</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>50</td>
-      <td>RM</td>
-      <td>51.0</td>
-      <td>6120</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Inside</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>4</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Abnorml</td>
-      <td>129900</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>190</td>
-      <td>RL</td>
-      <td>50.0</td>
-      <td>7420</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>AllPub</td>
-      <td>Corner</td>
-      <td>...</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1</td>
-      <td>2008</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>118000</td>
-    </tr>
   </tbody>
 </table>
-<p>10 rows × 80 columns</p>
+<p>1 rows × 80 columns</p>
 </div>
 
 
