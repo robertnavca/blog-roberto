@@ -70,7 +70,7 @@ data.head(1).to_html()
 
 
 <iframe
-    src="./data.html"
+    src="./datos.html"
     width="90%"
     height="1000px"
     style="border:none;">
