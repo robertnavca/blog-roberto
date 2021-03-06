@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 130
 
-title: CONTACTO
-subtitle:
+title: Contacto
+subtitle: "Sientase libre de contactar conmigo"
 
 content:
   # Automatically link email and phone or display as text?
