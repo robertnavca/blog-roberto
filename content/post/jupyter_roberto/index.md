@@ -80,7 +80,7 @@ data.head(1)
     }
     
     td {
-      min-width: 200px;
+      width:100%;
     }
 
 </style>
@@ -111,7 +111,7 @@ data.head(1)
       <th>SalePrice</th>
     </tr>
     <tr>
-      <th style="min-width:50px">Id</th>
+      <th style="width:100%">Id</th>
       <th></th>
       <th></th>
       <th></th>
