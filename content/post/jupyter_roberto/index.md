@@ -80,7 +80,7 @@ table, th, td {
         <tr style="text-align: right;">
             <th></th>
             <th style="min-width:120px">MSSubClass</th>
-            <th>MSZoning</th>
+            <th style="width:100%">MSZoning</th>
             <th>LotFrontage</th>
             <th>LotArea</th>
             <th>Street</th>
