@@ -79,7 +79,7 @@ data.head(1)
         text-align: right;
     }
     
-    table, th, td {
+    th, td {
       width:1px;
       white-space:nowrap;
     }
