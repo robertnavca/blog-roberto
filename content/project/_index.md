@@ -1,5 +1,5 @@
 ---
-title: PORTAFOLIO
+title: Portfolio
 
 # View.
 #   1 = List
