@@ -59,116 +59,110 @@ Lo primero que haremos será cargar los datos en un _dataframe_ de _Pandas_. Sab
 
 ```python
 data = pd.read_csv('data/train.csv', index_col='Id')
-data.head(1).to_html()
+data.head(1)
 ```
 
 
 
 
-    '<table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>MSSubClass</th>\n      <th>MSZoning</th>\n      <th>LotFrontage</th>\n      <th>LotArea</th>\n      <th>Street</th>\n      <th>Alley</th>\n      <th>LotShape</th>\n      <th>LandContour</th>\n      <th>Utilities</th>\n      <th>LotConfig</th>\n      <th>LandSlope</th>\n      <th>Neighborhood</th>\n      <th>Condition1</th>\n      <th>Condition2</th>\n      <th>BldgType</th>\n      <th>HouseStyle</th>\n      <th>OverallQual</th>\n      <th>OverallCond</th>\n      <th>YearBuilt</th>\n      <th>YearRemodAdd</th>\n      <th>RoofStyle</th>\n      <th>RoofMatl</th>\n      <th>Exterior1st</th>\n      <th>Exterior2nd</th>\n      <th>MasVnrType</th>\n      <th>MasVnrArea</th>\n      <th>ExterQual</th>\n      <th>ExterCond</th>\n      <th>Foundation</th>\n      <th>BsmtQual</th>\n      <th>BsmtCond</th>\n      <th>BsmtExposure</th>\n      <th>BsmtFinType1</th>\n      <th>BsmtFinSF1</th>\n      <th>BsmtFinType2</th>\n      <th>BsmtFinSF2</th>\n      <th>BsmtUnfSF</th>\n      <th>TotalBsmtSF</th>\n      <th>Heating</th>\n      <th>HeatingQC</th>\n      <th>CentralAir</th>\n      <th>Electrical</th>\n      <th>1stFlrSF</th>\n      <th>2ndFlrSF</th>\n      <th>LowQualFinSF</th>\n      <th>GrLivArea</th>\n      <th>BsmtFullBath</th>\n      <th>BsmtHalfBath</th>\n      <th>FullBath</th>\n      <th>HalfBath</th>\n      <th>BedroomAbvGr</th>\n      <th>KitchenAbvGr</th>\n      <th>KitchenQual</th>\n      <th>TotRmsAbvGrd</th>\n      <th>Functional</th>\n      <th>Fireplaces</th>\n      <th>FireplaceQu</th>\n      <th>GarageType</th>\n      <th>GarageYrBlt</th>\n      <th>GarageFinish</th>\n      <th>GarageCars</th>\n      <th>GarageArea</th>\n      <th>GarageQual</th>\n      <th>GarageCond</th>\n      <th>PavedDrive</th>\n      <th>WoodDeckSF</th>\n      <th>OpenPorchSF</th>\n      <th>EnclosedPorch</th>\n      <th>3SsnPorch</th>\n      <th>ScreenPorch</th>\n      <th>PoolArea</th>\n      <th>PoolQC</th>\n      <th>Fence</th>\n      <th>MiscFeature</th>\n      <th>MiscVal</th>\n      <th>MoSold</th>\n      <th>YrSold</th>\n      <th>SaleType</th>\n      <th>SaleCondition</th>\n      <th>SalePrice</th>\n    </tr>\n    <tr>\n      <th>Id</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>1</th>\n      <td>60</td>\n      <td>RL</td>\n      <td>65.0</td>\n      <td>8450</td>\n      <td>Pave</td>\n      <td>NaN</td>\n      <td>Reg</td>\n      <td>Lvl</td>\n      <td>AllPub</td>\n      <td>Inside</td>\n      <td>Gtl</td>\n      <td>CollgCr</td>\n      <td>Norm</td>\n      <td>Norm</td>\n      <td>1Fam</td>\n      <td>2Story</td>\n      <td>7</td>\n      <td>5</td>\n      <td>2003</td>\n      <td>2003</td>\n      <td>Gable</td>\n      <td>CompShg</td>\n      <td>VinylSd</td>\n      <td>VinylSd</td>\n      <td>BrkFace</td>\n      <td>196.0</td>\n      <td>Gd</td>\n      <td>TA</td>\n      <td>PConc</td>\n      <td>Gd</td>\n      <td>TA</td>\n      <td>No</td>\n      <td>GLQ</td>\n      <td>706</td>\n      <td>Unf</td>\n      <td>0</td>\n      <td>150</td>\n      <td>856</td>\n      <td>GasA</td>\n      <td>Ex</td>\n      <td>Y</td>\n      <td>SBrkr</td>\n      <td>856</td>\n      <td>854</td>\n      <td>0</td>\n      <td>1710</td>\n      <td>1</td>\n      <td>0</td>\n      <td>2</td>\n      <td>1</td>\n      <td>3</td>\n      <td>1</td>\n      <td>Gd</td>\n      <td>8</td>\n      <td>Typ</td>\n      <td>0</td>\n      <td>NaN</td>\n      <td>Attchd</td>\n      <td>2003.0</td>\n      <td>RFn</td>\n      <td>2</td>\n      <td>548</td>\n      <td>TA</td>\n      <td>TA</td>\n      <td>Y</td>\n      <td>0</td>\n      <td>61</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>NaN</td>\n      <td>NaN</td>\n      <td>NaN</td>\n      <td>0</td>\n      <td>2</td>\n      <td>2008</td>\n      <td>WD</td>\n      <td>Normal</td>\n      <td>208500</td>\n    </tr>\n  </tbody>\n</table>'
-
-
-
-<iframe
-    src="./datos.html"
-    width="90%"
-    height="1000px"
-    style="border:none;">
- </iframe>
-
-```HTML
 <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-    
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-    
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>MSSubClass</th>
-          <th>MSZoning</th>
-          <th>LotFrontage</th>
-          <th>LotArea</th>
-          <th>Street</th>
-          <th>Alley</th>
-          <th>LotShape</th>
-          <th>LandContour</th>
-          <th>Utilities</th>
-          <th>LotConfig</th>
-          <th>...</th>
-          <th>PoolArea</th>
-          <th>PoolQC</th>
-          <th>Fence</th>
-          <th>MiscFeature</th>
-          <th>MiscVal</th>
-          <th>MoSold</th>
-          <th>YrSold</th>
-          <th>SaleType</th>
-          <th>SaleCondition</th>
-          <th>SalePrice</th>
-        </tr>
-        <tr>
-          <th>Id</th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>1</th>
-          <td>60</td>
-          <td>RL</td>
-          <td>65.0</td>
-          <td>8450</td>
-          <td>Pave</td>
-          <td>NaN</td>
-          <td>Reg</td>
-          <td>Lvl</td>
-          <td>AllPub</td>
-          <td>Inside</td>
-          <td>...</td>
-          <td>0</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>0</td>
-          <td>2</td>
-          <td>2008</td>
-          <td>WD</td>
-          <td>Normal</td>
-          <td>208500</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>1 rows × 80 columns</p>
-    </div>
-``
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MSSubClass</th>
+      <th>MSZoning</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>Street</th>
+      <th>Alley</th>
+      <th>LotShape</th>
+      <th>LandContour</th>
+      <th>Utilities</th>
+      <th>LotConfig</th>
+      <th>...</th>
+      <th>PoolArea</th>
+      <th>PoolQC</th>
+      <th>Fence</th>
+      <th>MiscFeature</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>SaleType</th>
+      <th>SaleCondition</th>
+      <th>SalePrice</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>60</td>
+      <td>RL</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>Reg</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>Inside</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>WD</td>
+      <td>Normal</td>
+      <td>208500</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 80 columns</p>
+</div>
+
+
+
+
+```python
+
+```
