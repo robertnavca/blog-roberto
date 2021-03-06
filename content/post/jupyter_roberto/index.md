@@ -80,7 +80,7 @@ data.head(1)
     }
     
     td {
-      min-width: 100%;
+      min-width: 200px;
     }
 
 </style>
