@@ -69,31 +69,10 @@ data.head(1).to_html()
 
 
 
-```html
-<table border="1" class="dataframe">
-    <thead>
-        <tr style="text-align: right;">
-            <th></th>
-            <th>MSSubClass</th>
-            <th>MSZoning</th>
-            </tr>
-        <tr>
-            <th>Id</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>1</th>
-            <td>60</td>
-            <td>RL</td>
-        </tr>
-    </tbody>
-</table>'
-```
+<iframe
+    src="./data.html"
+    width="90%"
+    height="1000px"
+    style="border:none;">
+ </iframe>
 
-
-```python
-
-```
